@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+header {
+    background: #007bff;
+    color: white;
+    padding: 1.5rem;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+.summary {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+.stat {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.highlight {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: red;
+}
+
+.losses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.loss {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.loss:hover {
+    transform: scale(1.05);
+}
+
+.loss img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.number {
+    font-weight: bold;
+    color: red;
+    font-size: 1.5rem;
+}
+
+footer {
+    margin-top: 30px;
+    background: #007bff;
+    color: white;
+    padding: 1rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}

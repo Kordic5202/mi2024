@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personnel Management</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script defer src="/static/script.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f4f4f4; }
+        button { margin-right: 5px; padding: 5px 10px; }
+        canvas { max-width: 400px; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h2>Personnel List</h2>
+
+    <button onclick="loadPersonnel()">Refresh Data</button>
+
+    <table id="personnelTable">
+        <tr>
+            <th>ID</th>
+            <th>Full Name</th>
+            <th>Rank</th>
+            <th>Birth Date</th>
+            <th>Actions</th>
+        </tr>
+    </table>
+
+    <h2>Add Personnel</h2>
+    <input type="text" id="fullName" placeholder="Full Name">
+    <input type="text" id="rank" placeholder="Rank">
+    <input type="date" id="birthDate">
+    <button onclick="addPersonnel()">Add</button>
+
+    <h2>Personnel Rank Distribution</h2>
+    <canvas id="rankChart"></canvas>
+</body>
+</html>

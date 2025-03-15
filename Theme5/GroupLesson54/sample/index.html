@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Візуалізація даних</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Дашборд Візуалізації Даних</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Головна</a></li>
+            <li><a href="#statistics">Статистика</a></li>
+            <li><a href="#reports">Звіти</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="home">
+            <h2>Ключові показники</h2>
+            <div class="cards">
+                <div class="card">Групи: <span id="groups-count">5</span></div>
+                <div class="card">Ранги: <span id="ranks-count">3</span></div>
+                <div class="card">Студенти: <span id="students-count">120</span></div>
+            </div>
+        </section>
+        <section id="statistics">            
+            <div class="chart-container">
+                
+                <h2>Статистика</h2>
+                <canvas id="barChart"></canvas>
+            </div>
+            <div class="chart-container" id="ck2">
+                <canvas id="pieChart"></canvas>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Автор: Ім'я Прізвище</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

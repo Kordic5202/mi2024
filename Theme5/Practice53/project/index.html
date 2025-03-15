@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container mx-auto p-4">
+        <h1 class="text-2xl font-bold mb-4">Дашборд військових аналітиків</h1>
+      
+        <!-- Інформаційні картки -->
+        <div id="info-cards" class="grid grid-cols-3 gap-4 mb-4">
+          <!-- JS буде заповнювати -->
+        </div>
+      
+        <!-- Графік -->
+        <canvas id="chartGroups" class="mb-4"></canvas>
+      
+        <!-- Карта -->
+        <div id="map" class="h-64 mb-4"></div>
+      
+        <!-- Таблиця -->
+        <table id="student-table" class="table-auto w-full text-left">
+          <thead class="bg-gray-200">
+            <tr>
+              <th class="p-2">Повне ім'я</th>
+              <th class="p-2">Дата народження</th>
+              <th class="p-2">Ранг</th>
+              <th class="p-2">Група</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- JS буде заповнювати -->
+          </tbody>
+        </table>
+      </div>
+      
+
+        <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Leaflet.js CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
