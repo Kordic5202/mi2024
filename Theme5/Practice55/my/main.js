@@ -38,19 +38,19 @@ new Chart(ctx, {
 });
 
 // Заповнення таблиці
-const tbody = document.querySelector('#student-table tbody');
-mockData.groups.forEach(group => {
-  group.students.forEach(student => {
-    const row = document.createElement('tr');
-    row.innerHTML = `
-      <td class="p-2">${student.full_name}</td>
-      <td class="p-2">${student.birth_date}</td>
-      <td class="p-2">${student.rank_name}</td>
-      <td class="p-2">${group.group_name}</td>
-    `;
-    tbody.appendChild(row);
-  });
-});
+// const tbody = document.querySelector('#student-table tbody');
+// mockData.groups.forEach(group => {
+//   group.students.forEach(student => {
+//     const row = document.createElement('tr');
+//     row.innerHTML = `
+//       <td class="p-2">${student.full_name}</td>
+//       <td class="p-2">${student.birth_date}</td>
+//       <td class="p-2">${student.rank_name}</td>
+//       <td class="p-2">${group.group_name}</td>
+//     `;
+//     tbody.appendChild(row);
+//   });
+// });
 
 // Ініціалізація карти
 const map = L.map('map').setView([48.3794, 31.1656], 6); // Центр України
