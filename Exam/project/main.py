@@ -35,8 +35,12 @@ def get_locations():
         )
         cursor = connection.cursor(cursor_factory=RealDictCursor)
 
+        # Прописати оператор SELECT
+        
+        query = """select date, location, ammo_used as data_field  FROM battle_reports limit 50;"""
+
         # Виконуємо SELECT
-        cursor.execute("select * FROM battle_reports limit 50;")
+        cursor.execute(query)
         result = cursor.fetchall()
 
         return {"data": result}
