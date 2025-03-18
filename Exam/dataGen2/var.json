@@ -1,0 +1,26 @@
+{
+    "table_name": "battle_reports",
+    "columns": {
+      "id": "SERIAL PRIMARY KEY",
+      "date": "DATE NOT NULL",
+      "location": "CHAR(10) NOT NULL",
+      "ammo_used": "INTEGER NOT NULL",
+      "enemy_losses_personnel": "INTEGER NOT NULL",
+      "enemy_losses_equipment": "INTEGER NOT NULL",
+      "enemy_losses_tank": "INTEGER NOT NULL",
+      "enemy_losses_APC": "INTEGER NOT NULL",
+      "enemy_losses_artillery": "INTEGER NOT NULL",
+      "enemy_losses_trucks": "INTEGER NOT NULL"
+    },
+    "data_ranges": {
+      "location": ["A", "B", "C"],
+      "ammo_used": [300, 1200],
+      "enemy_losses_personnel": [50, 1050],
+      "enemy_losses_equipment": [10, 80],
+      "enemy_losses_tank": [1, 20],
+      "enemy_losses_APC": [1, 50],
+      "enemy_losses_artillery": [1, 16],
+      "enemy_losses_trucks": [1, 100]
+    }
+  }
+  
