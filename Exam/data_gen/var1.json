@@ -1,0 +1,18 @@
+{
+    "A": {
+      "ammo_used": [300, 1200],
+      "enemy_losses_personnel": [5, 50],
+      "enemy_losses_equipment": [1, 8]
+    },
+    "B": {
+      "ammo_used": [200, 900],
+      "enemy_losses_personnel": [2, 40],
+      "enemy_losses_equipment": [0, 5]
+    },
+    "C": {
+      "ammo_used": [100, 800],
+      "enemy_losses_personnel": [1, 30],
+      "enemy_losses_equipment": [0, 3]
+    }
+  }
+  

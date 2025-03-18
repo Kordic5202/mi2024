@@ -1,20 +1,24 @@
 /* Загальний стиль сторінки */
 body {
     font-family: Arial, sans-serif;
+<<<<<<< HEAD
     background-color: #fafaf4;
+=======
+    background-color: #f4f7fa6d;
+>>>>>>> 68235a1c52ebded7d6a29b3885808d2ec1392237
     margin: 0;
     padding: 0;
 }
 
 /* Контейнер */
 .container {
-    margin-top: 30px;
+   padding: 10px;
 }
 
 /* Заголовок */
 h1 {
     text-align: center;
-    color: #343a40;
+    color: #186dc158;
     margin-bottom: 30px;
 }
 
@@ -27,12 +31,12 @@ h1 {
 
 .table th, .table td {
     padding: 12px;
-    text-align: left;
+    text-align: center;
     border-bottom: 1px solid #ddd;
 }
 
 .table th {
-    background-color: #007bff;
+    background-color: #d119c2;
     color: white;
 }
 
@@ -41,7 +45,7 @@ h1 {
 }
 
 .table tr:hover td {
-    background-color: #e2e6ea;
+    background-color: #e5f19d;
 }
 
 /* Стиль для графіка */
@@ -60,4 +64,28 @@ canvas {
     padding: 10px 20px;
     cursor: pointer;
     font-size: 16px;
+<<<<<<< HEAD
     border-radius: 5px;
+=======
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Стиль для секцій */
+h2 {
+    margin-top: 40px;
+    color: #343a40;
+}
+
+/* Загальні відступи */
+.mt-5 {
+    padding-top: 50px;
+}
+
+.mt-3 {
+    margin-top: 20px;
+}
+>>>>>>> 68235a1c52ebded7d6a29b3885808d2ec1392237
