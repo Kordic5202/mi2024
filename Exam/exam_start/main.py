@@ -10,14 +10,14 @@ app = FastAPI()
 # Allow CORS for all origins (for testing, restrict in production)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Change this to ["http://localhost:5500"] for security
+    allow_origins=["*"],  
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
 # Налаштування підключення до БД
-DB_NAME = "exam53"
+DB_NAME = ""
 DB_USER = "postgres"         # замініть за потреби
 DB_PASSWORD = "admin"     # замініть за потреби
 DB_HOST = "localhost"        # або інша адреса/хост, якщо потрібно
@@ -37,10 +37,10 @@ def get_locations():
 
         # Прописати оператор SELECT
         
-        query = """SELECT date, location, enemy_losses_tank as data_field
-FROM battle_reports
-WHERE date >= CURRENT_DATE - INTERVAL '12 days'
-ORDER BY date DESC, location;
+        query = """
+
+
+
 """
 
         # Виконуємо SELECT
@@ -54,3 +54,6 @@ ORDER BY date DESC, location;
     finally:
         if connection:
             connection.close()
+
+
+# для запуску в терміналі необхідно ввести: uvicorn main:app --reload

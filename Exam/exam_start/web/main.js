@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const labels = [...new Set(data.map(item => item.date))]; // Унікальні дати
     const locations = [...new Set(data.map(item => item.location))]; // Унікальні локації
 
-    // Визначаємо базовий колір 
+    // Визначаємо базовий колір через складові rgb
     const baseColor = { r: 3, g: 92, b: 107 };
 
     // Початковий рівень прозорості та крок
